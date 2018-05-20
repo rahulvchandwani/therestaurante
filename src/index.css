@@ -3,3 +3,22 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+
+.mainTab {
+  font-size: 18px;
+  font-weight: bold;
+  color: #969696;
+}
+
+.subTab {
+  padding: 20px 20px 0px 20px;
+}
+
+.label {
+  cursor: pointer;
+}
+
+.selected-tab {
+  color: #DB0011;
+  border-bottom: 4px solid #DB0011
+}

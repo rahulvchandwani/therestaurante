@@ -5,5 +5,25 @@
       "config/**/*.js",
       "node_modules/**/*.ts"
     ]
+  },
+  "rules": {
+    "no-console": [false],
+    "member-ordering": [
+      false,
+      "public-before-private",
+      "static-before-instance",
+      "variales-before-functions"
+    ],
+    "member-access": [true, "no-public"],
+    "interface-name": [true, "never-prefix"],
+    "no-empty-interface": false,
+    "object-literal-sort-keys": false,
+    "ordered-imports": [true, {
+        "import-sources-order": "any",
+        "names-imports-order": "case-insensitive"
+    }],
+    "no-unused-variable": true,
+    "interface-over-type-literal": false,
+    "jsx-no-lambda": false
   }
 }
