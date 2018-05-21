@@ -36,6 +36,15 @@ export class Tabs extends React.Component<Props, LocalState> {
                 <span className={`subTab ${this.state.activeTab === MenuTabs.MENU ? "selected-tab": ""}`}>
                     <label className="label" onClick={() => this.handleSelectedTab(MenuTabs.MENU)}>Menu</label>
                 </span>
+                <span className={`subTab ${this.state.activeTab === MenuTabs.GALLERY ? "selected-tab": ""}`}>
+                    <label className="label" onClick={() => this.handleSelectedTab(MenuTabs.GALLERY)}>Gallery</label>
+                </span>
+                <span className={`subTab ${this.state.activeTab === MenuTabs.REGISTER ? "selected-tab": ""}`}>
+                    <label className="label" onClick={() => this.handleSelectedTab(MenuTabs.REGISTER)}>Register</label>
+                </span>
+                <span className={`subTab ${this.state.activeTab === MenuTabs.LOGIN ? "selected-tab": ""}`}>
+                    <label className="label" onClick={() => this.handleSelectedTab(MenuTabs.LOGIN)}>Login</label>
+                </span>
             </div>
         );
     }
